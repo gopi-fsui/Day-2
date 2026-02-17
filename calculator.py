@@ -26,7 +26,7 @@ while True:
         operator = input("+\n-\n*\n/\npick a operator: ")
         second_num = float(input("Enter a first number: "))
         answer = operations[operator](first_num,second_num)
-        print(answer)
+        print(f"{first_num} {operator} {second_num} = {answer}") # print(answer)
         should_continue = input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ").lower()
         if should_continue == "y":
             first_num = answer
