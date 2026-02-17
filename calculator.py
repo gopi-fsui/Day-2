@@ -30,6 +30,6 @@ while True:
         should_continue = input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation: ").lower()
         if should_continue == "y":
             first_num = answer
-        elif should_continue == "n":
+        else: # elif should_continue == "n":
             is_continue_calculating = False
             print("\n"*30)
